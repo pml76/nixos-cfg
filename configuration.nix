@@ -15,6 +15,9 @@
   boot.loader.efi.canTouchEfiVariables = true;
  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.dragAndDrop = true;
+
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
