@@ -13,6 +13,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  networking.proxy.default= "http://U439644:1RedLabel@prx-fralh-v01.sec.fra.dlh.de:8080";
  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   virtualisation.virtualbox.guest.enable = true;
