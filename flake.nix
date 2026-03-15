@@ -11,5 +11,10 @@
         ./workstations/work/configuration.nix
       ];
     };
+    nixosConfigurations.nixos-home = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./workstations/home/configuration.nix
+      ];
+    };
   };
 }
