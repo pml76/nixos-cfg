@@ -2,11 +2,11 @@
   description = "My NixOS flake for my work-machine's VM";
 
   inputs = {
-    nixpkgs.url = "https://github.com/NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
-    nixConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixos-work = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
       ];
